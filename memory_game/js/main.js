@@ -1,7 +1,10 @@
-console.log("Up and running!");
-let cardOne = "queen"
-let cardTwo = "queen"
-let cardThree = "king"
-let cardFour = "king"
-console.log("User flipped " + cardOne);
-console.log("User flipped " + cardThree);
+
+let cardOne = "Queen";
+let cardTwo = "Queen";
+let cardThree = "King";
+let cardFour = "King";
+
+console.log("user flipped " + cardOne);
+console.log("user flipped " + cardTwo);
+
+
