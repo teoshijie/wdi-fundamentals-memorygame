@@ -25,13 +25,10 @@ const cards = [
 const cardsInPlay = [];
 
 function checkForMatch() {
-	document.getElementsByTagName('img')[i].setAttribute('src',cards[cardId].cardImage)
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-  console.log("You found a match!");
-} else {
-  console.log("Sorry, try again.");
-}
-}
+  alert("You found a match!");
+} else {alert("Sorry, try again.");}
+};
 
 function flipCard() {
 		let cardId = this.getAttribute('data-id');
@@ -39,6 +36,7 @@ console.log("User flipped " + cards[cardId].rank);
 console.log(cards[cardId].suit);
 console.log(cards[cardId].cardImage);
 cardsInPlay.push(cards[cardId].rank);
+this.setAttribute('src', cards[cardId].cardImage);
 checkForMatch();
 }
 
